@@ -5,7 +5,7 @@ const Counter = () => {
 
 	return (
 		<div>
-			This is dasboard Application
+			APP3- module-fed counter
 			<button onClick={() => setCount(count + 1)}>Click me {count} </button>
 		</div>
 	);

@@ -50,13 +50,18 @@ module.exports = {
       remotes: {
       },
       shared: {
-        // ...deps,
-        // react: { singleton: true, eager: true, requiredVersion: deps.react },
-        // "react-dom": { 
-        //   singleton: true,
-        //   eager: true,
-        //   requiredVersion: deps["react-dom"],
-        // },
+        ...deps,
+        react: { singleton: true, eager: true, requiredVersion: deps.react },
+        "react-dom": {
+          singleton: true,
+          eager: true,
+          requiredVersion: deps["react-dom"],
+        },
+        "single-spa-react": {
+          singleton: true,
+          eager: true,
+          requiredVersion: deps["single-spa-react"],
+        },
       },
     })
   ],
